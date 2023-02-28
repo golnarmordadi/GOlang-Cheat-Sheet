@@ -3,7 +3,11 @@
 # Main Commands
 ##############################################################################
 
+```
 Install Go form https://go.dev/doc/install
+Go Playground https://go.dev/play/
+Search for existing Gp packages  https://pkg.go.dev/
+```
 
 go env  #To see configuration like operating system and processor architecture and etc
 go mod init [PACKAGE_NAME]  #Creates a go.mod file to track your code's dependencies
