@@ -3,6 +3,8 @@
 # Main Commands
 ##############################################################################
 
+Install Go form https://go.dev/doc/install
+
 go env  #To see configuration like operating system and processor architecture and etc.
 go mod init hello  #Create a module which is named hello
 go build filename #Define target by the main file
