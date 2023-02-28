@@ -5,12 +5,28 @@
 
 Install Go form https://go.dev/doc/install
 
-go env  #To see configuration like operating system and processor architecture and etc.
+go env  #To see configuration like operating system and processor architecture and etc
 go mod init [PACKAGE_NAME]  #Creates a go.mod file to track your code's dependencies
 go build filename #Define target by the main file
-go build . #Define target by the source folder
+go build . #Define target by the source folder. Compiles the packages named by the import paths, along with their dependencies, but it does not install the results.
 go run filename #Run the code by the main file
-go run .       #Run the code by the source folder
+go run .   #Run the code by the source folder + Performs project's building under the hood, it builds project as well
+go run --work . #Show up the location of temporary build files
+
+#Running multiple Go files at once
+```
+go run dir/*.go 
+go run dir/**/*.go
+go run file-a.go file-b.go file-c.go
+```
+
+go install [filename.go]  #Compiles and installs the packages named by the import paths. To deploy the binary files to bin directory. Since, bin directory is in the PATH of your system, we can execute it from anywhere.
+
+#If you are working with multiple files, command will create a binary file in GOBIN directory with a non-specific filename.
+```
+go install *.go
+go install file-1.go file-2.go ...
+```
 
 
 ##############################################################################
@@ -114,6 +130,10 @@ objdump
 Tracks trace files.
 ```
 trace
+```
+Formats your code as per the Go recommendations
+```
+gofmt
 ```
 
 
