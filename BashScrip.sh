@@ -42,7 +42,7 @@ For making our module available to another users we need to put it on Github
 ```
 git init
 git add .
-git commit -m &quot:tada: First commit&quot
+git commit -m "First commit"
 git push -u origin main
 ```
 
