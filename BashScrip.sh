@@ -3,8 +3,10 @@
 # Main Commands
 ##############################################################################
 
-```
+``` Installation 
 Install Go form https://go.dev/doc/install
+go version  #To see version of current installation
+
 Go Playground https://go.dev/play/
 Search for existing Gp packages  https://pkg.go.dev/
 ```
